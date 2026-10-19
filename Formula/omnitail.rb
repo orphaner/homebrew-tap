@@ -1,25 +1,25 @@
 class Omnitail < Formula
   desc "Follow many log streams at once, in stacked panes: files, commands, docker, compose, kubernetes"
   homepage "https://github.com/orphaner/omnitail"
-  version "0.2.0"
+  version "0.3.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/orphaner/omnitail/releases/download/v0.2.0/omnitail-aarch64-apple-darwin.tar.xz"
-      sha256 "77a91fbe832f5382ad981f8e33bd668b13fa66578e48d22f1c7dbcb8f9a0d61b"
+      url "https://github.com/orphaner/omnitail/releases/download/v0.3.0/omnitail-aarch64-apple-darwin.tar.xz"
+      sha256 "18f691b99db5687d94476299b8c3acd1f025d84f1dccee26e25d1cf88dea208d"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/orphaner/omnitail/releases/download/v0.2.0/omnitail-x86_64-apple-darwin.tar.xz"
-      sha256 "331d58db9b56c36ade5f63f1055c0143ae817353fe9a4872f11a5e7c308f0e62"
+      url "https://github.com/orphaner/omnitail/releases/download/v0.3.0/omnitail-x86_64-apple-darwin.tar.xz"
+      sha256 "051567bf3975ae38030d4cf4c4a3b8ff8b8620746c77ef4ab60e65261efa406f"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/orphaner/omnitail/releases/download/v0.2.0/omnitail-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "d6425bc88656f351198fca1b0da37cc70fb7ebf3ea5c3bb2d20ccba6f0b643fa"
+      url "https://github.com/orphaner/omnitail/releases/download/v0.3.0/omnitail-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "27ad58f733ce55db631dd8f988cd24960286c0bb2e22cdfe088ab79a207227ba"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/orphaner/omnitail/releases/download/v0.2.0/omnitail-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "a54795347de3d0aff7ea2ee80ee8782805c0393e171f00c8f7ae96089ea72127"
+      url "https://github.com/orphaner/omnitail/releases/download/v0.3.0/omnitail-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "079e432e1bb342c25ef1758c1a692a4cd2552a3c0384143fec62f7f474d556d2"
     end
   end
   license "MIT"
